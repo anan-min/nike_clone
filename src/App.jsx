@@ -1,8 +1,43 @@
-export default function App() {
-  return (
-    <h1 className="m-10 rounded-lg bg-white px-6 py-8 shadow-xl">
-      {" "}
-      Hello world
-    </h1>
-  );
-}
+import {
+  Hero,
+  PopularProduct,
+  SuperQuality,
+  SpecialOffer,
+  CustomerReviews,
+  Subscribe,
+  Footer,
+  Nav,
+  Services, // Ensure this component exists and is correctly imported
+} from "./sections";
+
+const App = () => (
+  <main className="relative">
+    <Nav />
+    <section className="xl:padding-1 wide:padding-r padding-b">
+      <Hero />
+    </section>
+    <section className="padding">
+      <PopularProduct />
+    </section>
+    <section className="padding">
+      <SuperQuality />
+    </section>
+    <section className="padding-x py-10">
+      <Services />
+    </section>
+    <section className="padding">
+      <SpecialOffer />
+    </section>
+    <section className="bg-pale-blue padding">
+      <CustomerReviews />
+    </section>
+    <section className="padding">
+      <Subscribe />
+    </section>
+    <section className="padding">
+      <Footer />
+    </section>
+  </main>
+);
+
+export default App;
