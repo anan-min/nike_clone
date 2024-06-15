@@ -6,9 +6,10 @@ import {
   CustomerReviews,
   Subscribe,
   Footer,
-  Nav,
   Services, // Ensure this component exists and is correctly imported
 } from "./sections";
+
+import Nav from "./components/Nav";
 
 const App = () => (
   <main className="relative">
